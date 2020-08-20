@@ -1,0 +1,27 @@
+.custom-bottom-menu
+{
+    position: fixed;
+    bottom: 0;
+}
+
+.container
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.brand-logo
+{
+    font-size: 1.5rem !important;
+}
+
+nav{
+    height: 50px;
+    line-height: 50px;
+}
+
+nav.custom-top-nav
+{
+    position: fixed;
+    top: 0;
+}
