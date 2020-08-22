@@ -2,6 +2,8 @@
 {
     position: fixed;
     bottom: 0;
+    width: 100% !important;
+    /* padding:10px; */
 }
 
 .container
@@ -25,3 +27,17 @@ nav.custom-top-nav
     position: fixed;
     top: 0;
 }
+
+.tab>a
+{
+    padding: 10px !important;
+    color:#00b0ff !important;
+    
+    
+}
+.material-icons
+{
+    font-size: 30px;
+}
+
+
