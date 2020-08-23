@@ -1,6 +1,7 @@
 .custom-bottom-menu
 {
     position: fixed;
+    z-index: 9999;
     bottom: 0;
     width: 100% !important;
     
@@ -67,6 +68,13 @@ nav.custom-top-nav
     
 }
 
+.tab>a:focus
+{
+    background-color: #00aeff23 !important;
+    
+    
+}
+
 .tab>a>i
 {
     font-size: 30px !important;
@@ -95,6 +103,7 @@ textarea:focus:not([readonly])+label
 
 .card-action-custom
 {
+   
     padding:10px 10px !important;
 }
 
@@ -105,59 +114,21 @@ textarea:focus:not([readonly])+label
     
 }
 
-/* -- quantity box -- */
+.qty-wrapper
+{
+    width:100%;
+    display: flex; 
+    background-color:#f0f0;
+}
 
-.quantity {
-    display: inline-block; }
-   
-   .quantity .input-text.qty {
-    width: 50%;
-    height: 30px;
-    padding: 0 5px;
+.input-qty
+{
+    height: 30px !important;
+    /* margin: 0px 2px !important; */
     text-align: center;
-    background-color: transparent;
-    border: 1px solid #efefef;
-   }
-   
-   .quantity.buttons_added {
-    text-align: left;
-    position: relative;
-    white-space: nowrap;
-    vertical-align: top; }
-   
-   .quantity.buttons_added input {
-    display: inline-block;
-    margin: 0;
-    vertical-align: top;
-    box-shadow: none;
-   }
-   
-   .quantity.buttons_added .minus,
-   .quantity.buttons_added .plus {
-    padding: 7px 10px 8px;
-    height: 32px;
-    width: 35px;
-    background-color: #ffffff;
-    border: 1px solid #efefef;
-    cursor:pointer;}
-   
-   .quantity.buttons_added .minus {
-    border-right: 0; }
-   
-   .quantity.buttons_added .plus {
-    border-left: 0; }
-   
-   .quantity.buttons_added .minus:hover,
-   .quantity.buttons_added .plus:hover {
-    background: #eeeeee; }
-   
-   .quantity input::-webkit-outer-spin-button,
-   .quantity input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    margin: 0; }
-    
-    .quantity.buttons_added .minus:focus,
-   .quantity.buttons_added .plus:focus {
-    outline: none; }
-   
+}
+
+.btn-qty
+{
+    flex-grow: 1; display: flex;  justify-content: center; align-items: center;
+}
