@@ -1,0 +1,68 @@
+/* start global css*/
+.custom-bottom-menu
+{
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    width: 100% !important;
+    
+    /* padding:10px; */
+}
+
+.brand-logo
+{
+    font-size: 1.5rem !important;
+    left: 50%;
+}
+
+nav{
+    height: 45px;
+    line-height: 45px;
+}
+
+nav.custom-top-nav
+{
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+
+
+.tab>a
+{
+    padding: 10px !important;
+    color:#00b0ff !important;
+    
+    
+}
+
+.tab>a:hover
+{
+    background-color: #00aeff10 !important;
+    
+    
+}
+
+.tab>a:active
+{
+    background-color: #00aeff23 !important;
+    
+    
+}
+
+.tab>a:focus
+{
+    background-color: #00aeff23 !important;
+    
+    
+}
+
+.tab>a>i
+{
+    font-size: 30px !important;
+}
+
+
+
+/* End Global css*/
