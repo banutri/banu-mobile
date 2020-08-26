@@ -2,7 +2,7 @@
 .custom-bottom-menu
 {
     position: fixed;
-    z-index: 9999;
+    z-index: 10;
     bottom: 0;
     width: 100% !important;
     
@@ -24,7 +24,7 @@ nav.custom-top-nav
 {
     position: fixed;
     top: 0;
-    z-index: 9999;
+    z-index: 10;
 }
 
 

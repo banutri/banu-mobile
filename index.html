@@ -30,70 +30,30 @@
     <div class="container">
 
         <div class="row ">
-            <form class="col s12">
-                <div class="row">
-                    <div class="input-field col s12 ">
-                        <i class="material-icons prefix">search</i>
-                        <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                        <label for="icon_prefix2">Cari disini...</label>
-                        <div class="search-list z-depth-1">
-                            <!-- Items -->
-                            <a href="#">
-                                <div class="card-panel search-items">
-                                    <div style="color: black;">Gulaku 1Kg mblegeds </div>
-                                    <div class="search-items-price">Rp. 15,000</div>
-                                    <div><i class="material-icons search-items-add">add</i></div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="card-panel search-items">
-                                    <div style="color: black;">Gulaku 1Kg mblegeds </div>
-                                    <div class="search-items-price">Rp. 15,000</div>
-                                    <div><i class="material-icons search-items-add">add</i></div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="card-panel search-items">
-                                    <div style="color: black;">Gulaku 1Kg mblegeds </div>
-                                    <div class="search-items-price">Rp. 15,000</div>
-                                    <div><i class="material-icons search-items-add">add</i></div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="card-panel search-items">
-                                    <div style="color: black;">Gulaku 1Kg mblegeds </div>
-                                    <div class="search-items-price">Rp. 15,000</div>
-                                    <div><i class="material-icons search-items-add">add</i></div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="card-panel search-items">
-                                    <div style="color: black;">Gulaku 1Kg mblegeds </div>
-                                    <div class="search-items-price">Rp. 15,000</div>
-                                    <div><i class="material-icons search-items-add">add</i></div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="card-panel search-items">
-                                    <div style="color: black;">Gulaku 1Kg mblegeds </div>
-                                    <div class="search-items-price">Rp. 15,000</div>
-                                    <div><i class="material-icons search-items-add">add</i></div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="card-panel search-items">
-                                    <div style="color: black;">Gulaku 1Kg mblegeds </div>
-                                    <div class="search-items-price">Rp. 15,000</div>
-                                    <div><i class="material-icons search-items-add">add</i></div>
-                                </div>
-                            </a>
+            <form class="col s12" style="margin-bottom: 0.5rem;">
 
-
-                        </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">search</i>
+                    <input type="text" id="icon_prefix2" class="materialize-textarea" autocomplete="off">
+                    <label for="icon_prefix2">Cari disini...</label>
+                    <div class="search-list z-depth-1">
+                        <!-- Items -->
+                        <a href="#">
+                            <div class="card-panel search-items">
+                                <div style="color: black;">Gulaku 1Kg mblegeds </div>
+                                <div class="search-items-price">Rp. 15,000</div>
+                                <div><i class="material-icons search-items-add">add</i></div>
+                            </div>
+                        </a>
+                        <!-- End Items -->
                     </div>
-
                 </div>
+
+
             </form>
+        </div>
+        <div class="card-panel total-info">
+            Total: Rp. <span class="total-price">20,000</span>
         </div>
         <div class="row">
             <div class="col s6">
@@ -113,7 +73,8 @@
                             <div style="flex-grow: 8;"><input type="number" class="input-qty " disabled min="1"
                                     value="1"></div>
                             <div class="btn-qty-wrapper">
-                                <a class="btn-floating btn-flat btn-small waves-effect waves-light light-blue accent-3"><i
+                                <a
+                                    class="btn-floating btn-flat btn-small waves-effect waves-light light-blue accent-3 "><i
                                         class="material-icons">chevron_right</i></a>
                             </div>
                         </div>
@@ -134,18 +95,79 @@
     <div class="custom-bottom-menu z-depth-1">
         <div class="col s12">
             <ul class="tabs tabs-fixed-width">
-                <li class="tab col s3"><a class="active" href="#test1"><i class="material-icons">
+                <li class="tab col s3 "><a class="active" href="/"><i class="material-icons">
                             calculate
                         </i></a></li>
-                <li class="tab col s3"><a href="#test2"> <i class="material-icons">assignment</i> </a></li>
+                <li class="tab col s3"><a href="#test2"> <i class="material-icons">archive</i> </a></li>
                 <li class="tab col s3 "><a href="#test3"> <i class="material-icons">show_chart</i> </a></li>
                 <li class="tab col s3"><a href="#test4"><i class="material-icons">settings</i></a></li>
             </ul>
         </div>
     </div>
 
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating green accent-4 modal-trigger" data-target="modalBayar">
+            <i class=" material-icons">check</i>
+        </a>
+    </div>
+
+
+
+    <!-- Modal Structure -->
+    <div id="modalBayar" class="modal">
+        <div class="modal-header">
+            <a href="#!" class="btn-close-modal modal-close "><i class="material-icons">close</i></a>
+        </div>
+        <div class="modal-content">
+            <h4 style="text-align:center;">Total Harga</h4>
+            <h5 style="text-align:center;">Rp. <span class="total-price">20,000</span></h5>
+            <form action="" method="get" class="input-bayar">
+            <div class="" style="display: flex; margin:40px 0px 10px 0px;">
+                    <div class="" style="flex-grow: 8;">
+                        <input type="number" name="bayar" placeholder="Dibayar berapa?" min="1">
+                    </div>
+                    <div class="" style="padding: 5px; ">
+                        <button type="submit" class="waves-effect waves-light light-blue accent-3 btn btn-send-pay"><i
+                                class="material-icons ">send</i></button>
+
+                    </div>
+                </div>
+            </form>
+
+
+        </div>
+
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modalKembalian" class="modal">
+        <div class="modal-header">
+
+            <a href="#!" class="btn-close-modal modal-close "><i class="material-icons">close</i></a>
+        </div>
+       
+        <div class="modal-content">
+            <h4 style="text-align:center;">Kembalian</h4>
+            <h5 style="text-align:center;">Rp. <span class="total-price">20,000</span></h5>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Jquery -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+
     <!-- Compiled and minified Material JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <!-- Kasir Script -->
+    <script src="/js/kasir.js"></script>
+
 </body>
 
 </html>
